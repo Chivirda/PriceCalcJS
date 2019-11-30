@@ -4,7 +4,14 @@
     height: 200px;
 }
 
-.card .card-title {
+.card .card__title {
     color: #ffffff;
+    font-size: 24px;
     font-weight: 400;
+    transition-duration: 500ms;
+    transition-property: color;
+}
+
+.card__link:hover .card__title {
+    color: #e91e63;
 }

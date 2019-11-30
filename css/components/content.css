@@ -1,7 +1,11 @@
-.card-wrap {
+.card__wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
     grid-gap: 20px;
     height: 100vh;
+}
+
+.arrow-back {
+    text-decoration: none;
 }
