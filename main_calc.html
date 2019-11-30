@@ -9,7 +9,7 @@
     <title>Расчёт итоговой цены</title>
 </head>
 <body>
-    <div class="container center">
+    <div class="container">
         <div class="table__wrap">
             <table>
                 <thead class="teal darken-1">
@@ -35,7 +35,22 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="/" class="arrow-back"><i class="material-icons large">arrow_back</i></a>
+            <div class="buttons">
+                <div class="buttons__wrapper">
+                <a href="/" class="arrow-back btn-large waves-effect waves-light"><i class="material-icons">arrow_back</i></a>
+                <a class="btn-large waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>
 </body>
