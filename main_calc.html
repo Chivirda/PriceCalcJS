@@ -38,20 +38,27 @@
             <div class="buttons">
                 <div class="buttons__wrapper">
                 <a href="/" class="arrow-back btn-large waves-effect waves-light"><i class="material-icons">arrow_back</i></a>
-                <a class="btn-large waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+                <a class="btn-large waves-effect waves-light red modal-trigger" data-target="modalForm"><i class="material-icons">add</i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="modal1" class="modal">
+    <div id="modalForm" class="modal">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <input type="text" class="validate" placeholder="Количество" id="count">
+            <!-- <label for="count">Количество</label> -->
+            <input type="text" class="validate" placeholder="Цена" id="price">
+            <!-- <label for="price">Цена</label> -->
+            <input type="text" class="validate" placeholder="Процент наценки" id="percentMarkup">
+            <!-- <label for="percentMarkup">Процент наценки</label> -->
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="waves-effect waves-green btn red">Добавить строку</a>
         </div>
     </div>
+
+    <script src="./js/model.js"></script>
+    <script src="./js/materialize.js"></script>
 </body>
 </html>
