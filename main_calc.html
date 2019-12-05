@@ -20,18 +20,29 @@
                         <th class="table__cell">Наценка &#37;</th>
                         <th class="table__cell">Наценка &#8381;</th>
                         <th class="table__cell">Итого</th>
+                        <th class="table__cell"><i class="material-icons">edit</i></th>
+                        <th class="table__cell"><i class="material-icons">delete</i></th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>
-                        </td>
-                        <td>234</td>
-                        <td>468</td>
                         <td>10</td>
-                        <td>123</td>
-                        <td>13234</td>
+                        <td>234 &#8381;</td>
+                        <td>468 &#8381;</td>
+                        <td>10 &#37;</td>
+                        <td>123 &#8381;</td>
+                        <td>13234 &#8381;</td>
+                        <td>
+                            <button class="btn btn-floating btn-small yellow js-edit">
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-floating btn-small red js-remove">
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -47,11 +58,8 @@
     <div id="modalForm" class="modal">
         <div class="modal-content">
             <input type="text" class="validate" placeholder="Количество" id="count">
-            <!-- <label for="count">Количество</label> -->
             <input type="text" class="validate" placeholder="Цена" id="price">
-            <!-- <label for="price">Цена</label> -->
             <input type="text" class="validate" placeholder="Процент наценки" id="percentMarkup">
-            <!-- <label for="percentMarkup">Процент наценки</label> -->
         </div>
         <div class="modal-footer">
             <a href="#!" class="waves-effect waves-green btn red">Добавить строку</a>
